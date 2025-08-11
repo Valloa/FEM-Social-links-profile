@@ -98,6 +98,7 @@ h1 {
 }
 
 .Block__title {
+    margin-block-end: var(--spacing-50);
 }
 
 .Block__image {
