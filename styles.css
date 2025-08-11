@@ -16,13 +16,21 @@
   --spacing-100: 0.5rem;
   --spacing-50: 0.25rem;
 
-  --transition: all 0.5s ease, outline 0.1s ease;
-
   color: var(--white);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 
-  background: var(--yellow);
+  background: var(--gray-900);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --transition: all 0.5s ease, outline 0.1s ease;
+  }
 }
 
 body {
@@ -32,7 +40,6 @@ body {
   padding-block: 4.5rem;
   min-block-size: 100dvb;
   margin: 0;
-  background: var(--gray-900);
 }
 
 main {
@@ -115,12 +122,12 @@ h1 {
   color: var(--green);
 }
 
-.Block__description {
-}
-
 .Links {
   display: grid;
   gap: var(--spacing-200);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .Link {
