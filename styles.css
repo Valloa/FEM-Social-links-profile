@@ -28,12 +28,16 @@
 body {
   position: relative;
   display: grid;
-  place-content: center;
   padding-inline: var(--spacing-300);
   padding-block: 4.5rem;
   min-block-size: 100dvb;
   margin: 0;
   background: var(--gray-900);
+}
+
+main {
+  display: grid;
+  place-items: center;
 }
 
 img {
